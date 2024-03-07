@@ -3,26 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Page with Thumbnail Image</title>
+    <style>
+        body {
+            margin: 0; /* ページのマージンをゼロに設定 */
+            padding: 0; /* ページのパディングをゼロに設定 */
+        }
+
+        header {
+            background-color: #333; /* ヘッダーの背景色を指定 */
+            color: white; /* ヘッダーテキストの色を指定 */
+            padding: 10px; /* ヘッダーの内側の余白を指定 */
+            text-align: center; /* テキストを中央揃えにする */
+        }
+
+        #thumbnail {
+            width: 100%; /* サムネイルの幅を100%に設定 */
+            height: auto; /* アスペクト比を維持して自動的に高さを調整 */
+            display: block; /* ブロック要素として表示 */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>John Doe</h1>
-        <p>Hello, I'm a passionate developer interested in exploring new technologies.</p>
-        <ul>
-            <li><a href="https://twitter.com/your_twitter_handle">Twitter</a></li>
-            <li><a href="https://github.com/your_github_username">GitHub</a></li>
-            <li><a href="https://your_lab_website.com">Research Lab</a></li>
-        </ul>
+        <h1>ページタイトル</h1>
     </header>
+
+    <img id="thumbnail" src="pic/cover.png" alt="サムネイル画像">
+
+
+    <section>
+        <h2>About</h2>
+        <p></p>
+        <ul>
+            <li>氏名：高瀬 俊希</li>
+            <li><a href="https://twitter.com/Tacase_ML">Twitter</a></li>
+            <li><a href="https://github.com/SyunkiTakase">GitHub</a></li>
+        </ul>
+    </section>
+
     <section>
         <h2>Education</h2>
         <ul>
-            <li>Ph.D. in Computer Science, University of XYZ, 2022-2026</li>
-            <li>M.Sc. in Computer Science, University of ABC, 2018-2020</li>
-            <li>B.Sc. in Computer Science, University of DEF, 2014-2018</li>
+            <li>修士：中部大学大学院 工学研究科 ロボット理工学専攻, 2022-2024</li>
+            <li>学士：中部大学 工学部 ロボット理工学部, 2018-2022</li>
         </ul>
     </section>
+
     <section>
         <h2>Publications</h2>
         <ul>
