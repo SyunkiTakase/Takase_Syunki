@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Takase Syunki</title>
+        <title>エッジコンピューティングのための圧縮画像認識</title>
         <style>
             body {
                 margin: 0; /* ページのマージンをゼロに設定 */
@@ -28,133 +28,71 @@
             section {
                 margin-left: 1cm; /* 左端から6cmのスペースを空ける */
             }
+
+            div  {
+                margin : 30px ;
+                padding : 20px ;
+                /* border : 5px solid maroon ;
+                background-color : lightgreen ; */
+            }
         </style>
     </head>
 
     <body>
         <header>
-            <h1>Takase Syunki</h1>
+            <h1>エッジコンピューティングのための圧縮画像認識</h1>
+            
+            <p><font size="3">高瀬 俊希，山内 悠嗣(中部大学) <br>
+
+                ビジョン技術の実利用ワークショップ(ViEW) 2022 <br>
+
+                [<a href="https://drive.google.com/file/d/1BF7IK8PyHSGDw0pWBS6RM5j-PV9_3M5f/view?usp=sharing">Paper</a>] &nbsp;&nbsp;
+                [<a href="https://drive.google.com/file/d/1927WZ-1swSNPiiJjHCFHvKFY8dYl6Yix/view?usp=sharing">Poster</a>]
+        
+            </font></p>
+
         </header>
 
-        <img id="thumbnail" src="pic/cover.png" alt="サムネイル画像">
+        <div>
+            <h2>Abstract</h2>
 
-        <section>
-            <h2>About</h2>
-            <ul>
-                <li> NAME </li>
-                <ul>
-                    <li> 高瀬 俊希 </li>
-                </ul>
+            本稿では，エッジコンピューティングを活用した画像認識システムにおけるデータ通信量を削減するために，画像の圧縮・復元と画像認識を行う2つのネットワークから構成されるフレームワークを提案する． クライアント側では，データ通信量を削減するためにエンコーダにより画像を圧縮してエッジサーバへ送信する．エッジサーバでは圧縮データをデコーダにより復元した画像を認識する．本稿では提案するフレームワークを画像分類と物体検出の2つのタスクに適用し，その有効性を確認する．<br>
+            
+            <img src="pic/framework.jpg" width="85%">
 
-                <li> Research Content </li>
-                <ul>
-                    <li> 
-                        学生時代は，エッジコンピューティングのための圧縮画像認識に関する研究と深層学習を用いたDeepfakeの検出の高精度化に関する研究に取り組んでいました．
-                    </li>
+        </div>
 
-                    <li> Topics </li>
-                    <ul>        
-                        <li> 画像の圧縮・復元器 </li>
-                        <li> 畳み込みニューラルネットワーク(CNN：Convolutional Neural Network) </li>
-                        <li> Deepfake検出 </li>
-                        <li> Vision Transformer </li>
-                        <li> 自己教師あり学習(SSL：Self-Supervised Learning) </li>
-                        <li> 計量学習 </li>
-                        <li> アテンション </li>
-                    </ul>
-                </ul>
+        <div>
+            <h2>各繰り返し回数の復元画像</h2>
 
-                <li> QUALIFICATIONS / SPECIAL SKILLS </li>
-                <ul>
-                    <li> 一般社団法人日本ディープラーニング協会 G検定(2022年03月) </li>
-                </ul>
+            繰り返し回数が多くなるに従って画質が向上している．特に細かなテクスチャを持つ画像(上段)は，何度も繰り返すことにより著しく画質が向上する．
 
-                <li> FOLLOW / LINKs </li>
-                <ul>
-                    <li> X：<a href="https://twitter.com/Tacase_ML">LINK</a> </li>
-                </ul>
-                <ul>
-                    <li> Github：<a href="https://github.com/SyunkiTakase">LINK</a> </li>
-                </ul>
-                <ul>
-                    <li> Qiita：<a href="https://qiita.com/syunki_tacase">LINK</a> </li>
-                </ul>
-            </ul>
-        </section>
+            <img src="pic/comp_img.png" width="85%">
 
-        <section>
-            <h2>Education</h2>
-            <p>
-                <strong><font size="4"> 修士 </font></strong><br>
-                大学：中部大学大学院 <br>
-                研究科：工学研究科 <br>
-                専攻：ロボット理工学専攻 <br>
-                指導教員：山内 悠嗣 <br>
-                研究室：<a href="https://cumil.org/">機械知能研究室(山内研究室)</a> <br>
-                年度：2022-2024 <br>
-            </p>
+        </div>
 
-            <p>
-                <strong><font size="4"> 学士 </font></strong> <br>
-                大学：中部大学 <br>
-                学部：工学部 <br>
-                学科：ロボット理工学科 <br>
-                指導教員：山内 悠嗣 <br>
-                研究室：<a href="https://cumil.org/">機械知能研究室(山内研究室)</a>  <br>
-                年度：2018-2022 <br>
-            </p>
-        </section>
+        <div>
+            <h2>各タスクにおける従来手法と提案手法の認識精度とデータ通信量の削減率</h2>
 
-        <section>
-            <h2>Publications</h2>
-            <p>
-                <strong> <font size="4"> 自己教師あり学習を導入したWavelet Vision TransformerによるDeepfake検出の高精度化 </font></strong> <br>
-                高瀬 俊希，山内 悠嗣<br>
-                <em>ビジョン技術の実利用ワークショップ, 2023. </em> <br>
-                [<a href="https://drive.google.com/file/d/1F9TjK8p4bNGFmEJDfS35M5IIwSfkDPV1/view?usp=sharing">Paper</a>]  
-                [<a href="https://syunkitakase.github.io/ContrastiveDeepfakedetectionPages/">Webpage</a>]  
-                [<a href="https://drive.google.com/file/d/15J8lXJcVyAN2odnBFou1FQP3JIDbz9_i/view?usp=sharing">Poster</a>]
-            </p>
+            提案手法はデータ通信量を画像分類タスクにおいて85[%]~95[%]，物体検出タスクにおいて75[%]~77[%]削減可能である．分類精度は画像を圧縮しない従来手法が最も高く，提案手法(圧縮画像モデル)は従来手法と比較して3～4[%]の低下した．mAPは画像を圧縮しない従来手法が最も高く，提案手法(圧縮画像モデル)は従来手法と比較して3～12[%]の低下した．
 
-            <p>
-                <strong> <font size="4"> エッジコンピューティングのための圧縮復元画像認識 </font></strong> <br>
-                高瀬 俊希，戸谷 響，西片 智広，山内 悠嗣<br>
-                <em>日本興業出版 画像ラボ, 2023, 6月号. </em> <br>
-                [<a href="https://www.nikko-pb.co.jp/products/detail.php?product_id=5541">Webpage</a>]  
-            </p>
+            <img src="pic/result.png" width="85%">
 
-            <p>
-                <strong> <font size="4"> エッジコンピューティングのための圧縮画像認識 </font></strong> <br>
-                高瀬 俊希，戸谷 響，西片 智広，山内 悠嗣<br>
-                <em>ビジョン技術の実利用ワークショップ, 2022. </em> <br>
-                [<a href="https://drive.google.com/file/d/1BF7IK8PyHSGDw0pWBS6RM5j-PV9_3M5f/view?usp=sharing">Paper</a>]  
-                [<a href="https://syunkitakase.github.io/CompressRecognitionPages/">Webpage</a>]  
-                [<a href="https://drive.google.com/file/d/1927WZ-1swSNPiiJjHCFHvKFY8dYl6Yix/view?usp=sharing">Poster</a>]
-            </p>
+        </div>
 
-        </section>
+        <div>
+            <h2>Bibtex</h2>
 
-        <section>
-            <h2>Sample Code</h2>
-            <p>
-                <strong><font size="4"> CNN Classification </font></strong><br>
-                Convolutional Neural Network(CNN)による画像分類のサンプルコード：<a href="https://github.com/SyunkiTakase/CNN_Classification_Sample">Code</a> <br>
-            </p>
+            <code>
+            @inproceedings{高瀬2022,  <br>
+                author = {高瀬 俊希 and 戸谷 響 and 西片 智広 and 山内 悠嗣},  <br>
+                title = {エッジコンピューティングのための圧縮画像認識}, <br>
+                booktitle = {ビジョン技術の実利用ワークショップ},  <br>
+                year = {2022},  <br>
+            } <br>
+            </code>
 
-            <p>
-                <strong><font size="4"> ViT Classification </font></strong><br>
-                Vision Transformer(ViT)による画像分類のサンプルコード：<a href="https://github.com/SyunkiTakase/ViT_Classification_Sample">Code</a> <br>
-            </p>
-
-            <p>
-                <strong><font size="4"> Metric Learning </font></strong><br>
-                Metric Learningを導入したResNetによる画像分類のサンプルコード：<a href="https://github.com/SyunkiTakase/Metric_Learning_Sample">Code</a> <br>
-            </p>
-            <p>
-                <strong><font size="4"> Deepfake Detection </font></strong><br>
-                Deepfake検出のサンプルコード：<a href="https://github.com/SyunkiTakase/DeepfakeDetection_Sample">Code</a> <br>
-            </p>
-        </section>
+        </div>
 
     </body>
 
