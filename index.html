@@ -10,7 +10,6 @@
 <script type="text/javascript" src="./js/openclose.js"></script>
 </head>
 
-<!-- Profile -->
 <body>
 <div id="container">
 
@@ -22,7 +21,6 @@
 <img2><a href="https://github.com/SyunkiTakase"><img src="./images/Github.png" width="20" hspace="6"></a></img2>
 <img3><a href="https://qiita.com/syunki_tacase"><img src="./images/Qiita.png" width="20" hspace="6"></a></img3>
 
-<!-- About Me -->
 <section id="new">
 <h2 id="newinfo_hdr" class="close">About Me</h2>
 <dl id="newinfo">
@@ -35,12 +33,10 @@
 </dl>
 </section>
 
-<!-- Publications -->
 <section id="new">
 <h2 id="newinfo_hdr" class="close">学術活動</h2>
 <dl id="newinfo">
 	
-<!-- Journal -->
 <dt>論文誌</dt><br/>
 <ul style="list-style: circle;">
 	<!-- <li><u>Hiroaki Minoura</u>, Tsubasa Hirakawa, Yusuke Sugano, Takayoshi Yamashita, Hironobu Fujiyoshi:
@@ -49,7 +45,6 @@
 	</li> -->
 </ul>
 
-<!-- Domestic Conference -->
 <dt>国内会議 & ワークショップ</dt><br/>
 <ul style="list-style: circle;">
 	<li><u>高瀬 俊希</u>，山内 悠嗣:
@@ -80,29 +75,27 @@
 </dl>
 </section>
 
-<!-- Experience -->
 <section id="new">
 <h2 id="newinfo_hdr" class="close">経歴 & 活動内容</h2>
 <dl id="newinfo">
 	<p>
 	<br/>
-	<ed1>2018/4 ~ 2020/3</ed1> 中部大学大学院 工学研究科 ロボット理工学専攻 博士前期課程 卒業
+	<ed1>2022/4 ~ 2024/3</ed1> 中部大学大学院 工学研究科 ロボット理工学専攻 博士前期課程 卒業
 	<br/>
 	<ed1>2018/4 ~ 2022/3</ed1> 中部大学 工学部 ロボット理工学科 卒業
 	</p>
 </dl>
 </section>
 
-<!-- Skills & Expertise -->
 <section id="new">
 <h2 id="newinfo_hdr" class="close">スキル & 専門知識</h2>
 <dl id="newinfo">
 	<p>
-	<ed1>Platforms</ed1> Linux, Mac OS X, Windows
+	<ed1>Platforms</ed1> Linux, Windows
 	<br/>
-	<ed1>Programming</ed1> C/C++, Python, Deep Learning's Framework (Chainer, PyTorch), Unix Shell Scripting
+	<ed1>Programming</ed1> C, C++, Python, Scikit-learn, TensorFlow, Keras, PyTorch
 	<br/>
-	<ed1>Other skills</ed1> HTML/CSS, Linux Server Administration, LaTeX
+	<ed1>Other skills</ed1> LaTeX
 	</p>
 </dl>
 </section>
@@ -110,12 +103,13 @@
 <section>
     <h2 id="newinfo_hdr" class="close">サンプルコード</h2>
     <p>
-        <strong><font size="4"> CNN Classification </font></strong><br>
+        <br/>
+        <ed1>CNN Classification</ed1>
         Convolutional Neural Network(CNN)による画像分類のサンプルコード：<a href="https://github.com/SyunkiTakase/CNN_Classification_Sample">Code</a> <br>
     </p>
 
     <p>
-        <strong><font size="4"> ViT Classification </font></strong><br>
+        <ed1>ViT Classification</ed1>
         Vision Transformer(ViT)による画像分類のサンプルコード：<a href="https://github.com/SyunkiTakase/ViT_Classification_Sample">Code</a> <br>
     </p>
 
@@ -124,19 +118,13 @@
         Metric Learningを導入したResNetによる画像分類のサンプルコード：<a href="https://github.com/SyunkiTakase/Metric_Learning_Sample">Code</a> <br>
     </p>
     <p>
-        <strong><font size="4"> Deepfake Detection </font></strong><br>
+        <ed1>Deepfake Detection</ed1>
         Deepfake検出のサンプルコード：<a href="https://github.com/SyunkiTakase/DeepfakeDetection_Sample">Code</a> <br>
     </p>
 </section>
 
 </div>
-<!--/container-->
 
-<footer>
-<small>Copyright&copy; Syunki Takase. All Rights Reserved.</small>
-</footer>
-
-<!--スマホ用更新情報　600px以下-->
 <script type="text/javascript">
 if (OCwindowWidth() <= 600) {
 	open_close("newinfo_hdr", "newinfo");
@@ -145,3 +133,166 @@ if (OCwindowWidth() <= 600) {
 
 </body>
 </html>
+
+
+<!-- <!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Takase Syunki</title>
+        <style>
+            body {
+                margin: 0; /* ページのマージンをゼロに設定 */
+                padding: 0; /* ページのパディングをゼロに設定 */
+            }
+
+            header {
+                background-color: #333; /* ヘッダーの背景色を指定 */
+                color: white; /* ヘッダーテキストの色を指定 */
+                padding: 10px; /* ヘッダーの内側の余白を指定 */
+                text-align: center; /* テキストを中央揃えにする */
+            }
+
+            #thumbnail {
+                width: 100%; /* サムネイルの幅を100%に設定 */
+                height: 50%; /* アスペクト比を維持して自動的に高さを調整 */
+                display: block; /* ブロック要素として表示 */
+            }
+
+            section {
+                margin-left: 1cm; /* 左端から6cmのスペースを空ける */
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Takase Syunki</h1>
+        </header>
+
+        <img id="thumbnail" src="pic/cover.png" alt="サムネイル画像">
+
+        <section>
+            <h2>About</h2>
+            <ul>
+                <li> NAME </li>
+                <ul>
+                    <li> 高瀬 俊希 </li>
+                </ul>
+
+                <li> Research Content </li>
+                <ul>
+                    <li> 
+                        学生時代は，エッジコンピューティングのための圧縮画像認識に関する研究と深層学習を用いたDeepfakeの検出の高精度化に関する研究に取り組んでいました．
+                    </li>
+
+                    <li> Topics </li>
+                    <ul>        
+                        <li> 画像の圧縮(Image Compression) </li>
+                        <li> 畳み込みニューラルネットワーク(CNN：Convolutional Neural Network) </li>
+                        <li> Deepfake検出(Deepfake Detection) </li>
+                        <li> Vision Transformer(ViT) </li>
+                        <li> 自己教師あり学習(SSL：Self-Supervised Learning) </li>
+                        <li> 計量学習(Metric Learning) </li>
+                        <li> アテンション(Attention) </li>
+                    </ul>
+                </ul>
+
+                <li> QUALIFICATIONS / SPECIAL SKILLS </li>
+                <ul>
+                    <li> 一般社団法人日本ディープラーニング協会 G検定(2022年03月) </li>
+                </ul>
+
+                <li> FOLLOW / LINKs </li>
+                <ul>
+                    <li> X：<a href="https://twitter.com/Tacase_ML">LINK</a> </li>
+                </ul>
+                <ul>
+                    <li> Github：<a href="https://github.com/SyunkiTakase">LINK</a> </li>
+                </ul>
+                <ul>
+                    <li> Qiita：<a href="https://qiita.com/syunki_tacase">LINK</a> </li>
+                </ul>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p>
+                <strong><font size="4"> 修士 </font></strong><br>
+                大学：中部大学大学院 <br>
+                研究科：工学研究科 <br>
+                専攻：ロボット理工学専攻 <br>
+                指導教員：山内 悠嗣 <br>
+                研究室：<a href="https://cumil.org/">機械知能研究室(山内研究室)</a> <br>
+                年度：2022-2024 <br>
+            </p>
+
+            <p>
+                <strong><font size="4"> 学士 </font></strong> <br>
+                大学：中部大学 <br>
+                学部：工学部 <br>
+                学科：ロボット理工学科 <br>
+                指導教員：山内 悠嗣 <br>
+                研究室：<a href="https://cumil.org/">機械知能研究室(山内研究室)</a>  <br>
+                年度：2018-2022 <br>
+            </p>
+        </section>
+
+        <section>
+            <h2>Publications</h2>
+            <p>
+                <strong> <font size="4"> 自己教師あり学習を導入したWavelet Vision TransformerによるDeepfake検出の高精度化 </font></strong> <br>
+                高瀬 俊希，山内 悠嗣<br>
+                <em>ビジョン技術の実利用ワークショップ, 2023. </em> <br>
+                [<a href="https://drive.google.com/file/d/1F9TjK8p4bNGFmEJDfS35M5IIwSfkDPV1/view?usp=sharing">Paper</a>]  
+                [<a href="https://syunkitakase.github.io/ContrastiveDeepfakedetectionPages/">Webpage</a>]  
+                [<a href="https://drive.google.com/file/d/15J8lXJcVyAN2odnBFou1FQP3JIDbz9_i/view?usp=sharing">Poster</a>]
+            </p>
+
+            <p>
+                <strong> <font size="4"> エッジコンピューティングのための圧縮復元画像認識 </font></strong> <br>
+                高瀬 俊希，戸谷 響，西片 智広，山内 悠嗣<br>
+                <em>日本興業出版 画像ラボ, 2023, 6月号. </em> <br>
+                [<a href="https://www.nikko-pb.co.jp/products/detail.php?product_id=5541">Webpage</a>]  
+            </p>
+
+            <p>
+                <strong> <font size="4"> エッジコンピューティングのための圧縮画像認識 </font></strong> <br>
+                高瀬 俊希，戸谷 響，西片 智広，山内 悠嗣<br>
+                <em>ビジョン技術の実利用ワークショップ, 2022. </em> <br>
+                [<a href="https://drive.google.com/file/d/1BF7IK8PyHSGDw0pWBS6RM5j-PV9_3M5f/view?usp=sharing">Paper</a>]  
+                [<a href="https://syunkitakase.github.io/CompressRecognitionPages/">Webpage</a>]  
+                [<a href="https://drive.google.com/file/d/1927WZ-1swSNPiiJjHCFHvKFY8dYl6Yix/view?usp=sharing">Poster</a>]
+            </p>
+
+        </section>
+
+        <section>
+            <h2>Sample Code</h2>
+            <p>
+                <strong><font size="4"> CNN Classification </font></strong><br>
+                Convolutional Neural Network(CNN)による画像分類のサンプルコード：<a href="https://github.com/SyunkiTakase/CNN_Classification_Sample">Code</a> <br>
+            </p>
+
+            <p>
+                <strong><font size="4"> ViT Classification </font></strong><br>
+                Vision Transformer(ViT)による画像分類のサンプルコード：<a href="https://github.com/SyunkiTakase/ViT_Classification_Sample">Code</a> <br>
+            </p>
+
+            <p>
+                <strong><font size="4"> Metric Learning </font></strong><br>
+                Metric Learningを導入したResNetによる画像分類のサンプルコード：<a href="https://github.com/SyunkiTakase/Metric_Learning_Sample">Code</a> <br>
+            </p>
+            <p>
+                <strong><font size="4"> Deepfake Detection </font></strong><br>
+                Deepfake検出のサンプルコード：<a href="https://github.com/SyunkiTakase/DeepfakeDetection_Sample">Code</a> <br>
+            </p>
+        </section>
+
+    </body>
+
+</html> -->

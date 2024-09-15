@@ -33,7 +33,7 @@ h2 {
 	margin-bottom: 15px;
 	color: #ffffff;			/*文字色*/
 	padding: 5px 20px;		/*上下、左右への余白*/
-	background: #455765;	/*背景色*/
+	background: #808080;	/*背景色*/
   border-radius: 4px;		/*角丸のサイズ。大きくすれば角の丸みが大きくなる。角丸が不要ならこの１行削除。*/
 }
 
@@ -44,7 +44,7 @@ h3 {
 	margin-bottom: 15px;
 	padding: 3px 20px;			/*上下、左右への余白*/
 	border-radius: 4px;			/*角丸のサイズ。大きくすれば角の丸みが大きくなる。角丸が不要ならこの１行削除。*/
-	border: 2px solid #455765;	/*枠線の幅、線種、色*/
+	border: 2px solid #191970;	/*枠線の幅、線種、色*/
 }
 
 /*段落タグ設定
@@ -71,7 +71,7 @@ a:hover {
 	width: 80%;					/*ブロックの幅を画面の80%にする設定。*/
 	max-width: 1000px;			/*上のwidth指定の追加設定。幅1000pxを最大幅に設定し、それ以上広げない。*/
 	margin: 5% auto 0px;		/*HP画面の左右中央に表示させる設定。最初の5%は上(コンテナーの外側)に空ける余白の指定。*/
-	background: #fff;					/*背景色（古いブラウザ用）*/
+	background: #191970;					/*背景色（古いブラウザ用）*/
 	background: rgba(255,255,255,0.9);	/*背景色。rgba値は左３つが色指定(この場合は白)で最後の小数点が透明度。*/
 	border-radius: 10px;	/*角丸のサイズ。大きくすれば角の丸みが大きくなる。角丸が不要ならこの１行削除。*/
 	padding: 4%;			/*ブロック内の余白*/
@@ -85,7 +85,7 @@ a:hover {
 /*headerブロック*/
 header {
 	text-align: left;	/*ヘッダーブロックの内容をセンタリングする設定*/
-	color: #455765;					/*文字色*/
+	color: #191970;					/*文字色*/
 	font-size: 20px;
 }
 li1 a{
